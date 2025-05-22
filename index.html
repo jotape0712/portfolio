@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=], initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Joao Pedro | Portfolio </title>
 </head>
-<body>  
+
+<body>
+
+    <div class="particles"></div>
 
     <nav class="navegacao">
         <ul class="menu">
@@ -26,16 +30,16 @@
     </nav>
 
     <main id="home" class="cabecalho">
-            <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo">
-            <h1>Joao Pedro Bezerra</h1>
-            <p class="title-about-me">Full Stack Developer</p>
+        <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo">
+        <h1>Joao Pedro Bezerra</h1>
+        <p class="title-about-me">Full Stack Developer</p>
     </main>
 
     <section id="about" class="about">
-       <h2 class="about-me">About Me</h2>
-       <div class="box">
+        <h2 class="about-me">About Me</h2>
+        <div class="box">
             <p class="description">test</p>
-       </div>
+        </div>
     </section>
 
     <section id="projects" class="projects">
@@ -43,37 +47,51 @@
         <div class="projects-place">
             <div class="project-card">
                 <img src="img/image.png" alt="Project 1" class="projects-image">
-                <h3 class="info-projects">Jokempo</h3>
-                <p class="description-projects">Test</p>
+                <div>
+                    <h3 class="info-projects">Jokempo</h3>
+                    <p class="description-projects">Test</p>
+                </div>
+
             </div>
 
             <div class="project-card">
-                <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" alt="Project 1" class="projects-image">
-                <h3 class="info-projects">Project 1</h3>
-                <p class="description-projects">Test</p>
+                <img src="img/numerosec.png" alt="Project 1"
+                    class="projects-image">
+                <div class="text-box">
+                    <h3 class="info-projects">Jogo do Numero Secreto</h3>
+                    <p class="description-projects">Test</p>
+                </div>
             </div>
 
             <div class="project-card">
-                <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" alt="Project 3" class="projects-image">
-                <h3 class="info-projects">Project 1</h3>
-                <p class="description-projects">Test</p>
+                <img src="img/geradorsenha.jpeg" alt="Project 3"
+                    class="projects-image">
+                <div class="text-box">
+                    <h3 class="info-projects">Gerador de Senhas</h3>
+                    <p class="description-projects">Test</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact">
-        <h2 class="contact">Contact</h2>
-        <form class="form-contact" id="form">
-            <div class="form-name">
-                <input placeholder="name" class="form-type">
+    <section id="contact" class="contact">
+        <h2 class="contact-title">Contact</h2>
+        <form class="form-contact" id="form" onsubmit="sendWhatsapp(event)">
+            <div class="form-group">
+                <input placeholder="name" class="form-type" id="name">
             </div>
             <div class="form-group">
-                <textarea class="text-form" placeholder="Type your message"></textarea>
+                <textarea class="form-type" placeholder="Type your message" rows="4" id="message"></textarea>
             </div>
+
+            <button type="submit" class="form-button">Send WhatsApp</button>
         </form>
     </section>
 
 
+    <script src="script.js" defer></script>
 
 </body>
+
 </html>
