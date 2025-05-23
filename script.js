@@ -11,7 +11,14 @@ const formatedmessage = encodeURIComponent(text);
 
 const url = `https://wa.me/${phonenumber}?text=${formatedmessage}`
 
-window.open(url, '_blank');
+window.open(url, '_blank', 'noopener,noreferrer');
+
+// Usamos 'noopener,noreferrer' ou 'newWindow.opener = null' para evitar ataques de tabnabbing.
+// Sem isso, a aba aberta poderia acessar e manipular a página original via window.opener,
+// o que pode levar a redirecionamentos maliciosos ou phishing.
+// 'noopener' impede essa referência, e 'noreferrer' também protege a privacidade do usuário,
+// evitando que o site destino saiba a origem do link.
+
 }
 
 document.addEventListener("DOMContentLoaded", function () {

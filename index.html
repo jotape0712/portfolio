@@ -96,13 +96,20 @@
       <button type="submit" class="form-button">Send WhatsApp</button>
     </form>
     <div class="social-media">
-      <a href="https://www.linkedin.com/in/joao-pedro-bezerra-3a17a8303/" target="_blank">
+      <a href="https://www.linkedin.com/in/joao-pedro-bezerra-3a17a8303/" target="_blank" rel="noopener noreferrer">
         <img src="img/linkedin.webp" alt="LinkedIn" />
       </a>
-      <a href="https://github.com/jotape0712" target="_blank">
+      <a href="https://github.com/jotape0712" target="_blank" rel="noopener noreferrer">
         <img src="img/github.png" alt="Github" />
       </a>
     </div>
+    <!-- 
+  Usamos 'rel="noopener noreferrer"' para evitar ataques de tabnabbing.
+  Sem isso, a aba aberta via target="_blank" poderia acessar e manipular a página original
+  por meio da propriedade window.opener, possibilitando redirecionamentos maliciosos ou phishing.
+  'noopener' bloqueia essa referência, e 'noreferrer' também protege a privacidade do usuário,
+  impedindo que o site de destino saiba a origem do clique.
+-->
   </section>
 
   <script src="script.js" defer></script>
