@@ -1,102 +1,108 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="blue.css" id="theme-style">
-
-    <title>Joao Pedro | Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="blue.css" id="theme-style" />
+  <title>Joao Pedro | Portfolio</title>
 </head>
 
 <body>
+  <div class="particles"></div>
 
-    <div class="particles"></div>
+  <nav class="navegacao">
+    <ul class="menu">
+      <li><a href="#home" class="menu-link">Home</a></li>
+      <li><a href="#about" class="menu-link">About</a></li>
+      <li><a href="#projects" class="menu-link">Projects</a></li>
+      <li><a href="#contact" class="menu-link">Contact</a></li>
+    </ul>
+  </nav>
 
-    <nav class="navegacao">
-        <ul class="menu">
-            <li><a href="#home" class="menu-link">Home</a></li>
-            <li><a href="#about" class="menu-link">About</a></li>
-            <li><a href="#projects" class="menu-link">Projects</a></li>
-            <li><a href="#contact" class="menu-link">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main id="home" class="cabecalho">
-        <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo" alt="Foto de perfil">
-        <h1>Joao Pedro Bezerra</h1>
-        <p class="title-about-me">Full Stack Developer</p>
-         <div id="theme-options-wrapper" class="theme-options">
-            <div data-mode="blue" id="blue-mode" class="theme-dot theme-blue"></div>
-            <div data-mode="white" id="light-mode" class="theme-dot theme-white"></div>
-            <div data-mode="gray" id="gray-mode" class="theme-dot theme-gray"></div>
+  <main id="home" class="cabecalho">
+    <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo" alt="Foto de perfil" />
+    <h1>Joao Pedro Bezerra</h1>
+    <p class="title-about-me">Full Stack Developer</p>
+    <div id="theme-options-wrapper" class="theme-options">
+      <div data-mode="blue" id="blue-mode" class="theme-dot theme-blue"></div>
+      <div data-mode="white" id="light-mode" class="theme-dot theme-white"></div>
+      <div data-mode="gray" id="gray-mode" class="theme-dot theme-gray"></div>
     </div>
-    </main>
+  </main>
 
-   
+  <section id="about" class="about">
+    <h2 class="about-me">About Me</h2>
+    <div class="box">
+      <p class="description">
+        Hi there! I'm a full stack developer in training, passionate about solving problems with clean and efficient code.
+        I have an certain knowledge in Python for Data Science and I'm specializing in JavaScript and Node.js to build complete and scalable solutions.
+        My goal is to combine robust back-end systems with modern interfaces to deliver functional and well-designed experiences.
+      </p>
+    </div>
+  </section>
 
-    <section id="about" class="about">
-        <h2 class="about-me">About Me</h2>
-        <div class="box">
-            <p class="description">Hi there! I'm a full stack developer in training, passionate about solving problems with clean and efficient code. I have an certain knowledge in Python for Data Science and I'm specializing in JavaScript and Node.js to build complete and scalable solutions. My goal is to combine robust back-end systems with modern interfaces to deliver functional and well-designed experiences.</p>
+  <section id="projects" class="projects">
+    <h2 class="projects-title">My projects</h2>
+    <div class="projects-place">
+
+      <div class="project-card">
+        <img src="img/image.png" alt="Project 1" class="projects-image" />
+        <div class="text-box">
+          <h3 class="info-projects">Rock, Paper and Scissors game</h3>
+          <p class="description-projects">
+            This project consists of developing a simple Rock, Paper, Scissors game using Python.
+            The goal was to create a basic interaction between the user and the computer, where both select a move and the program determines the winner based on the classic rules of the game.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <section id="projects" class="projects">
-        <h2 class="projects-title">My projects</h2>
-        <div class="projects-place">
-            <div class="project-card">
-                <img src="img/image.png" alt="Project 1" class="projects-image">
-                <div class="text-box">
-                    <h3 class="info-projects">Rock, Paper and Scissors game</h3>
-                    <p class="description-projects">This project consists of developing a simple Rock, Paper, Scissors game using Python. The goal was to create a basic interaction between the user and the computer, where both select a move and the program determines the winner based on the classic rules of the game.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/numerosec.png" alt="Project 1" class="projects-image">
-                <div class="text-box">
-                    <h3 class="info-projects">Secret Number Game</h3>
-                    <p class="description-projects">This project consists of developing a simple and interactive website for the Secret Number Game. The main goal was to practice and strengthen my JavaScript skills by exploring programming logic and user interaction.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="img/geradorsenha.jpeg" alt="Project 3" class="projects-image">
-                <div class="text-box">
-                    <h3 class="info-projects">Password Generator </h3>
-                    <p class="description-projects">This project consists of developing a custom password generator using Python. The main idea was to create a tool that allows the user to generate secure passwords with a defined number of characters and specific rules — such as including symbols, numbers, and uppercase letters.</p>
-                </div>
-            </div>
+      <div class="project-card">
+        <img src="img/numerosec.png" alt="Project 2" class="projects-image" />
+        <div class="text-box">
+          <h3 class="info-projects">Secret Number Game</h3>
+          <p class="description-projects">
+            This project consists of developing a simple and interactive website for the Secret Number Game.
+            The main goal was to practice and strengthen my JavaScript skills by exploring programming logic and user interaction.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <section id="contact" class="contact">
-        <h2 class="contact-title">Contact</h2>
-        <form class="form-contact" id="form" onsubmit="sendWhatsapp(event)">
-            <div class="form-group">
-                <input placeholder="name" class="form-type" id="name">
-            </div>
-            <div class="form-group">
-                <textarea class="form-type" placeholder="Type your message" rows="4" id="message"></textarea>
-            </div>
-
-            <button type="submit" class="form-button">Send WhatsApp</button>
-        </form>
-        <div class="social-media">
-            <a href="https://www.linkedin.com/in/joaopedro-bezerra/" target="_blank">
-                <img src="img/linkedin.webp" alt="LinkedIn">
-            </a>
-            <a href="https://github.com/jotape0712" target="_blank">
-                <img src="img/github.png" alt="Github">
-            </a>
+      <div class="project-card">
+        <img src="img/geradorsenha.jpeg" alt="Project 3" class="projects-image" />
+        <div class="text-box">
+          <h3 class="info-projects">Password Generator</h3>
+          <p class="description-projects">
+            This project consists of developing a custom password generator using Python.
+            The main idea was to create a tool that allows the user to generate secure passwords with a defined number of characters and specific rules — such as including symbols, numbers, and uppercase letters.
+          </p>
         </div>
-    </section>
+      </div>
 
-    <script src="script.js" defer></script>
-    <script src="themeswitcher.js" defer></script>
+    </div>
+  </section>
 
+  <section id="contact" class="contact">
+    <h2 class="contact-title">Contact</h2>
+    <form class="form-contact" id="form" onsubmit="sendWhatsapp(event)">
+      <div class="form-group">
+        <input placeholder="name" class="form-type" id="name" />
+      </div>
+      <div class="form-group">
+        <textarea class="form-type" placeholder="Type your message" rows="4" id="message"></textarea>
+      </div>
+      <button type="submit" class="form-button">Send WhatsApp</button>
+    </form>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/joaopedro-bezerra/" target="_blank">
+        <img src="img/linkedin.webp" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/jotape0712" target="_blank">
+        <img src="img/github.png" alt="Github" />
+      </a>
+    </div>
+  </section>
 
+  <script src="script.js" defer></script>
+  <script src="themeswitcher.js" defer></script>
 </body>
-
 </html>
