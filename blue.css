@@ -152,17 +152,20 @@ h1 {
     display: inline-flex; gap: 1rem; margin-top: 1rem;
 }
 
-.theme-white {
-    width:25px; height:25px; border-radius:50%; background:#f5f5f5; cursor:pointer; border:1px solid #ccc;
+.theme-dot {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid black;
 }
 
-.theme-blue {
-    width:25px; height:25px; border-radius:50%; background:#001e4d; cursor:pointer; border:1px solid #ccc;
-}
+.theme-blue { background-color: #01264d; }
+.theme-white { background-color: #ffffff; }
+.theme-gray { background-color: #37504d; }
 
-.theme-gray {
-    width:25px; height:25px; border-radius:50%; background:#37504d; cursor:pointer; border:1px solid #ccc;
-}
 
 
 @keyframes fadeInBox {
