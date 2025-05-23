@@ -14,5 +14,26 @@ const url = `https://wa.me/${phonenumber}?text=${formatedmessage}`
 window.open(url, '_blank');
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+        const aboutSection = document.querySelector('#about');
+        const description = document.querySelector('.description');
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        description.classList.add('visible');
+                        observer.unobserve(entry.target); // só anima uma vez
+                    }
+                });
+            },
+            {
+                threshold: 0.5 // metade visível na tela
+            }
+        );
+
+        observer.observe(aboutSection);
+    });
+
 
 

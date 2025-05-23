@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=], initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Joao Pedro | Portfolio </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="white.css">
+    <title>Joao Pedro | Portfolio</title>
 </head>
 
 <body>
@@ -14,26 +14,27 @@
 
     <nav class="navegacao">
         <ul class="menu">
-            <li>
-                <a href="#home" class="menu-link">Home</a>
-            </li>
-            <li>
-                <a href="#about" class="menu-link">About</a>
-            </li>
-            <li>
-                <a href="#projects" class="menu-link">Projects</a>
-            </li>
-            <li>
-                <a href="#contact" class="menu-link">Contact</a>
-            </li>
+            <li><a href="#home" class="menu-link">Home</a></li>
+            <li><a href="#about" class="menu-link">About</a></li>
+            <li><a href="#projects" class="menu-link">Projects</a></li>
+            <li><a href="#contact" class="menu-link">Contact</a></li>
         </ul>
     </nav>
 
     <main id="home" class="cabecalho">
-        <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo">
+        <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo" alt="Foto de perfil">
         <h1>Joao Pedro Bezerra</h1>
         <p class="title-about-me">Full Stack Developer</p>
+         <div id="theme-options-wrapper" class="theme-options">
+            <div data-mode="blue" id="blue-mode" class="theme-blue"></div>
+            <div data-mode="light" id="light-mode" class="theme-white"></div>
+            <div data-mode="gray" id="gray-mode" class="theme-gray"></div>
+            <div data-mode="purple" id="purple-mode" class="theme-purple"></div>
+            <div data-mode="black" id="black-mode" class="theme-black"></div>
+    </div>
     </main>
+
+   
 
     <section id="about" class="about">
         <h2 class="about-me">About Me</h2>
@@ -47,16 +48,14 @@
         <div class="projects-place">
             <div class="project-card">
                 <img src="img/image.png" alt="Project 1" class="projects-image">
-                <div>
-                    <h3 class="info-projects"> Rock, Paper and Scissors game</h3>
+                <div class="text-box">
+                    <h3 class="info-projects">Rock, Paper and Scissors game</h3>
                     <p class="description-projects">This project consists of developing a simple Rock, Paper, Scissors game using Python. The goal was to create a basic interaction between the user and the computer, where both select a move and the program determines the winner based on the classic rules of the game.</p>
                 </div>
-
             </div>
 
             <div class="project-card">
-                <img src="img/numerosec.png" alt="Project 1"
-                    class="projects-image">
+                <img src="img/numerosec.png" alt="Project 1" class="projects-image">
                 <div class="text-box">
                     <h3 class="info-projects">Secret Number Game</h3>
                     <p class="description-projects">This project consists of developing a simple and interactive website for the Secret Number Game. The main goal was to practice and strengthen my JavaScript skills by exploring programming logic and user interaction.</p>
@@ -64,13 +63,11 @@
             </div>
 
             <div class="project-card">
-                <img src="img/geradorsenha.jpeg" alt="Project 3"
-                    class="projects-image">
+                <img src="img/geradorsenha.jpeg" alt="Project 3" class="projects-image">
                 <div class="text-box">
                     <h3 class="info-projects">Password Generator </h3>
                     <p class="description-projects">This project consists of developing a custom password generator using Python. The main idea was to create a tool that allows the user to generate secure passwords with a defined number of characters and specific rules — such as including symbols, numbers, and uppercase letters.</p>
                 </div>
-
             </div>
         </div>
     </section>
@@ -87,8 +84,15 @@
 
             <button type="submit" class="form-button">Send WhatsApp</button>
         </form>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/joaopedro-bezerra/" target="_blank">
+                <img src="img/linkedin.webp" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/jotape0712" target="_blank">
+                <img src="img/github.png" alt="Github">
+            </a>
+        </div>
     </section>
-
 
     <script src="script.js" defer></script>
 
