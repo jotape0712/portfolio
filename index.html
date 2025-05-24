@@ -33,11 +33,7 @@
   <section id="about" class="about">
     <h2 class="about-me">About Me</h2>
     <div class="box">
-      <p class="description">
-        Hi there! I'm a full stack developer in training, passionate about solving problems with clean and efficient code.
-        I have an certain knowledge in Python for Data Science and I'm specializing in JavaScript and Node.js to build complete and scalable solutions.
-        My goal is to combine robust back-end systems with modern interfaces to deliver functional and well-designed experiences.
-      </p>
+      <span id="typed-text" class="description"></span>
     </div>
     <div class="curriculo">
           <a href="https://drive.google.com/file/d/1jLHZLAgYIfDLSDwjDW6J8RMcD-CYAMQk/view?usp=sharing" download="CURRICULO_JOAO_PEDRO_BEZERRA.pdf">Clique aqui para acessar o meu Curriculo!</a>
@@ -114,5 +110,20 @@
 
   <script src="script.js" defer></script>
   <script src="themeswitcher.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed('#typed-text', {
+    strings: [
+        "Hi there! I'm a full stack developer in training, passionate about solving problems with clean and efficient code. I have a certain knowledge in Python for Data Science and I'm specializing in JavaScript and Node.js to build complete and scalable solutions. My goal is to combine robust back-end systems with modern interfaces to deliver functional and well-designed experiences."
+    ],
+    typeSpeed: 10,
+    backSpeed: 25,
+    loop: false
+});
+
+  
+</script>
+</script>
 </body>
 </html>
