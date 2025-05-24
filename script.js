@@ -42,6 +42,17 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(aboutSection);
     });
 
+var typed = new Typed('#typed-text', {
+    strings: [
+        "Hi there! I'm a full stack developer in training, passionate about solving problems with clean and efficient code. I have a certain knowledge in Python for Data Science and I'm specializing in JavaScript and Node.js to build complete and scalable solutions. My goal is to combine robust back-end systems with modern interfaces to deliver functional and well-designed experiences."
+    ],
+    typeSpeed: 10,
+    backSpeed: 25,
+    loop: false
+});
+
+// Typed js é uma biblioteca que permite digitar um texto na velocidade que vc configurar!
+
 
 
 
