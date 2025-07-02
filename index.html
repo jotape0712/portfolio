@@ -33,11 +33,10 @@
   <section id="about" class="about">
     <h2 class="about-me">About Me</h2>
     <div class="box">
-      <p class="description">
-        Hi there! I'm a full stack developer in training, passionate about solving problems with clean and efficient code.
-        I have an certain knowledge in Python for Data Science and I'm specializing in JavaScript and Node.js to build complete and scalable solutions.
-        My goal is to combine robust back-end systems with modern interfaces to deliver functional and well-designed experiences.
-      </p>
+      <span id="typed-text" class="description"></span>
+    </div>
+    <div class="curriculo">
+          <a href="https://drive.google.com/file/d/1jLHZLAgYIfDLSDwjDW6J8RMcD-CYAMQk/view?usp=sharing" download="CURRICULO_JOAO_PEDRO_BEZERRA.pdf">Clique aqui para acessar o meu Curriculo!</a>
     </div>
   </section>
 
@@ -92,16 +91,31 @@
       <button type="submit" class="form-button">Send WhatsApp</button>
     </form>
     <div class="social-media">
-      <a href="https://www.linkedin.com/in/joaopedro-bezerra/" target="_blank">
+      <a href="https://www.linkedin.com/in/joao-pedro-bezerra-3a17a8303/" target="_blank" rel="noopener noreferrer">
         <img src="img/linkedin.webp" alt="LinkedIn" />
       </a>
-      <a href="https://github.com/jotape0712" target="_blank">
+      <a href="https://github.com/jotape0712" target="_blank" rel="noopener noreferrer">
         <img src="img/github.png" alt="Github" />
       </a>
     </div>
+    <!-- 
+  Usamos 'rel="noopener noreferrer"' para evitar ataques de tabnabbing.
+  Sem isso, a aba aberta via target="_blank" poderia acessar e manipular a página original
+  por meio da propriedade window.opener, possibilitando redirecionamentos maliciosos ou phishing.
+  'noopener' bloqueia essa referência, e 'noreferrer' também protege a privacidade do usuário,
+  impedindo que o site de destino saiba a origem do clique.
+-->
   </section>
 
   <script src="script.js" defer></script>
   <script src="themeswitcher.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  
+
+  
+</script>
+</script>
 </body>
 </html>

@@ -419,4 +419,27 @@ h1 {
     }
 }
 
+.curriculo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.curriculo a {
+    font-size: 10px;
+    text-decoration: none;
+    color:  var(--claro);
+    background-color: var(--escuro);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.curriculo a:hover {
+    background-color: #0056b3;
+}
+
+
+
 
