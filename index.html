@@ -3,119 +3,395 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="blue.css" id="theme-style" />
+  <link rel="stylesheet" href="assets/css/modern.css" id="theme-style" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <title>Joao Pedro | Portfolio</title>
 </head>
 
 <body>
-  <div class="particles"></div>
 
-  <nav class="navegacao">
-    <ul class="menu">
-      <li><a href="#home" class="menu-link">Home</a></li>
-      <li><a href="#about" class="menu-link">About</a></li>
-      <li><a href="#projects" class="menu-link">Projects</a></li>
-      <li><a href="#contact" class="menu-link">Contact</a></li>
-    </ul>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <span class="brand-logo">&lt;JP/&gt;</span>
+      </div>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="theme-toggle-container">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+          </button>
+        </div>
+        <a href="https://github.com/jotape0712" class="nav-cta" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github"></i>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
   </nav>
 
-  <main id="home" class="cabecalho">
-    <img src="img/Imagem do WhatsApp de 2025-05-20 à(s) 17.04.54_9babb405 copiar png 1.png" class="profile-photo" alt="Foto de perfil" />
-    <h1>Joao Pedro Bezerra</h1>
-    <p class="title-about-me">Full Stack Developer</p>
-    <div id="theme-options-wrapper" class="theme-options">
-      <div data-mode="blue" id="blue-mode" class="theme-dot theme-blue"></div>
-      <div data-mode="white" id="light-mode" class="theme-dot theme-white"></div>
-      <div data-mode="gray" id="gray-mode" class="theme-dot theme-gray"></div>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="wave-emoji">👋</span>
+          <span class="greeting-text">Hi There! I'm Joao Pedro</span>
+        </div>
+        <h1 class="hero-title">
+          An <span class="highlight">Aspiring Full Stack Developer</span>
+          <br>Learning To <span class="highlight">Build</span> Amazing
+          <br><span class="highlight">Digital Solutions</span>
+        </h1>
+        <p class="hero-description">
+          Currently studying to become a full stack developer with a passion for creating innovative web solutions.
+          I'm focusing on JavaScript, React, and Node.js while exploring TypeScript to build modern,
+          scalable applications and prepare for my career in web development.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://github.com/jotape0712" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+            View My Work
+          </a>
+          <a href="mailto:joaopedrobezerra0712@gmail.com" class="btn btn-secondary">
+            <i class="fas fa-envelope"></i>
+            Get In Touch
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">🎓</span>
+            <span class="stat-label">Computer Science Student</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Learning Projects</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">💡</span>
+            <span class="stat-label">Always Curious</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="code-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control red"></span>
+              <span class="control yellow"></span>
+              <span class="control green"></span>
+            </div>
+            <div class="window-title">portfolio.js</div>
+          </div>
+          <div class="code-content">
+            <div class="code-line">
+              <span class="line-number">1</span>
+              <span class="code">const developer = {</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">2</span>
+              <span class="code">  name: "<span class="string">Joao Pedro</span>",</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">3</span>
+              <span class="code">  skills: [<span class="string">"JS"</span>, <span class="string">"React"</span>, <span class="string">"Node.js"</span>],</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">4</span>
+              <span class="code">  learning: <span class="string">"TypeScript"</span>,</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">5</span>
+              <span class="code">  passion: <span class="string">"Development"</span></span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">6</span>
+              <span class="code">};</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
-
-  <section id="about" class="about">
-    <h2 class="about-me">About Me</h2>
-    <div class="box">
-      <span id="typed-text" class="description"></span>
-    </div>
-    <div class="curriculo">
-          <a href="https://drive.google.com/file/d/1jLHZLAgYIfDLSDwjDW6J8RMcD-CYAMQk/view?usp=sharing" download="CURRICULO_JOAO_PEDRO_BEZERRA.pdf">Clique aqui para acessar o meu Curriculo!</a>
+    <div class="scroll-indicator">
+      <div class="scroll-text">Scroll to explore</div>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
     </div>
   </section>
 
-  <section id="projects" class="projects">
-    <h2 class="projects-title">My projects</h2>
-    <div class="projects-place">
-
-      <div class="project-card">
-        <img src="img/image.png" alt="Project 1" class="projects-image" />
-        <div class="text-box">
-          <h3 class="info-projects">Rock, Paper and Scissors game</h3>
-          <p class="description-projects">
-            This project consists of developing a simple Rock, Paper, Scissors game using Python.
-            The goal was to create a basic interaction between the user and the computer, where both select a move and the program determines the winner based on the classic rules of the game.
-          </p>
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <div class="about-card">
+            <h3>Who am I?</h3>
+            <p id="typed-text" class="typed-description"></p>
+            <div class="skills-grid">
+              <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <span>JavaScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <span>React</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <span>Node.js</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-js-square" style="color: #3178c6;"></i>
+                <span>TypeScript</span>
+              </div>
+              <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <span>Database</span>
+              </div>
+              <div class="skill-item">
+                <i class="fab fa-git-alt"></i>
+                <span>Git</span>
+              </div>
+            </div>
+            <div class="resume-download">
+              <a href="https://drive.google.com/file/d/1ec_9RZR7CmNjeGEP13_gh7m2cnt5Nom3/view?usp=sharing" 
+                 class="btn btn-outline" target="_blank">
+                <i class="fas fa-download"></i>
+                Download Resume
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="profile-card">
+            <div class="profile-image">
+              <img src="assets/img/profile.png" alt="Joao Pedro Bezerra" />
+            </div>
+            <div class="profile-info">
+              <h4>Joao Pedro Bezerra</h4>
+              <p>Computer Science Student</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="project-card">
-        <img src="img/ESP32.png" alt="Project 2" class="projects-image" />
-        <div class="text-box">
-          <h3 class="info-projects"> IoT Monitoring System with ESP32 and MQTT</h3>
-          <p class="description-projects">
-            An academic project developed at PUCPR, integrating sensors and actuators with an ESP32 microcontroller using the MQTT protocol and a Flask-based web interface. The system enables real-time monitoring of temperature (via NTC sensor), motion detection (PIR), gas level measurement (MQ2), and remote control of devices such as a relay, buzzer, and servo motor.
-          </p>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <img src="img/geradorsenha.jpeg" alt="Project 3" class="projects-image" />
-        <div class="text-box">
-          <h3 class="info-projects">Password Generator</h3>
-          <p class="description-projects">
-            This project consists of developing a custom password generator using Python.
-            The main idea was to create a tool that allows the user to generate secure passwords with a defined number of characters and specific rules — such as including symbols, numbers, and uppercase letters.
-          </p>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <h2 class="contact-title">Contact</h2>
-    <form class="form-contact" id="form" onsubmit="sendWhatsapp(event)">
-      <div class="form-group">
-        <input placeholder="name" class="form-type" id="name" />
+  <!-- Projects Section -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Here are some projects I've built while learning programming and exploring different technologies</p>
       </div>
-      <div class="form-group">
-        <textarea class="form-type" placeholder="Type your message" rows="4" id="message"></textarea>
+      <div class="projects-grid">
+        
+        <div class="project-card modern-card">
+          <div class="project-image">
+            <img src="assets/img/weather-app.png" alt="weather-app" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://previsaotempo-pi.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fas fa-eye"></i>
+                </a>
+                <a href="https://github.com/jotape0712/clima-tempo" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">React</span>
+              <span class="tag">Vite</span>
+            </div>
+            <h3 class="project-title">Weather app</h3>
+            <p class="project-description">
+              A modern web application built with React + Vite that provides real-time weather forecasts for any city worldwide, leveraging multiple APIs for greater accuracy.
+            </p>
+            <div class="project-tech">
+              <div class="tech-stack">
+                <i class="fab fa-react"></i>
+                <i class="fas fa-cloud"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card modern-card">
+          <div class="project-image">
+            <img src="assets/img/iot-system.png" alt="IoT System" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/jotape0712/esp32-project" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">IoT</span>
+              <span class="tag">ESP32</span>
+              <span class="tag">Flask</span>
+            </div>
+            <h3 class="project-title">IoT Monitoring System</h3>
+            <p class="project-description">
+              Academic project integrating sensors with ESP32 using MQTT protocol and Flask web interface for real-time monitoring and control.
+            </p>
+            <div class="project-tech">
+              <div class="tech-stack">
+                <i class="fas fa-microchip"></i>
+                <i class="fab fa-python"></i>
+                <i class="fas fa-wifi"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card modern-card">
+          <div class="project-image">
+            <img src="assets/img/nodejs-api.png" alt="Node+Express" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/jotape0712/express-node-mongodb" class="project-link" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express</span>
+              <span class="tag">MongoDB</span>
+
+            </div>
+            <h3 class="project-title">Users API — Node.js, Express & MongoDB</h3>
+            <p class="project-description">
+              This is a RESTful API built with Node.js, Express, and MongoDB (via Mongoose) designed to manage user data. It supports creating, reading, updating, and deleting users, making it suitable for registration systems, authentication services, or simple prototypes.
+            </p>
+            <div class="project-tech">
+              <div class="tech-stack">
+                <i class="fab fa-node-js"></i>
+                <i class="fas fa-database"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <button type="submit" class="form-button">Send WhatsApp</button>
-    </form>
-    <div class="social-media">
-      <a href="https://www.linkedin.com/in/joao-pedro-bezerra-3a17a8303/" target="_blank" rel="noopener noreferrer">
-        <img src="img/linkedin.webp" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/jotape0712" target="_blank" rel="noopener noreferrer">
-        <img src="img/github.png" alt="Github" />
-      </a>
     </div>
-    <!-- 
-  Usamos 'rel="noopener noreferrer"' para evitar ataques de tabnabbing.
-  Sem isso, a aba aberta via target="_blank" poderia acessar e manipular a página original
-  por meio da propriedade window.opener, possibilitando redirecionamentos maliciosos ou phishing.
-  'noopener' bloqueia essa referência, e 'noreferrer' também protege a privacidade do usuário,
-  impedindo que o site de destino saiba a origem do clique.
--->
   </section>
 
-  <script src="script.js" defer></script>
-  <script src="themeswitcher.js" defer></script>
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">I'm always excited to connect with fellow developers, learn from others, and explore new opportunities</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>joaopedrobezerra0712@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div class="contact-details">
+                <h4>WhatsApp</h4>
+                <p>+55 (47) 99639-4734</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Brazil</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <h4>Follow Me</h4>
+            <div class="social-grid">
+              <a href="https://www.linkedin.com/in/joao-pedro-bezerra-3a17a8303/" class="social-link" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://github.com/jotape0712" class="social-link" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form" id="contactForm" onsubmit="sendWhatsapp(event)">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fab fa-whatsapp"></i>
+              Send WhatsApp Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-text">
+          <p>&copy; 2025 Joao Pedro Bezerra. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js" defer></script>
+  <script src="assets/js/themeswitcher.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16/dist/typed.umd.js"></script>
-
-  
-
-  
-</script>
-</script>
 </body>
 </html>
