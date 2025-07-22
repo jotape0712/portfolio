@@ -39,5 +39,7 @@ portfolio/
 └── README.md
 ```
 
+URL: https://portfoliojp-chi.vercel.app/
+
 ⭐ Se gostou do projeto, deixe uma estrela no repositório!
 
