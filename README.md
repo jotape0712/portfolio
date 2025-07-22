@@ -8,7 +8,6 @@ Um portfólio moderno e responsivo desenvolvido para apresentar meus projetos e 
 - 🌓 Sistema de troca de temas (claro/escuro)
 - 📱 Interface mobile-friendly
 - 🎨 Animações e transições suaves
-- 📄 Integração com WhatsApp para contato
 - 🔗 Links diretos para projetos no GitHub
 
 ## 🛠️ Tecnologias Utilizadas
@@ -55,50 +54,6 @@ O portfólio conta com um sistema de alternância entre tema claro e escuro:
 4. **Projetos** - Showcase dos principais projetos desenvolvidos
 5. **Contato** - Formulário de contato integrado com WhatsApp
 6. **Footer** - Links para redes sociais e informações adicionais
-
-## 📱 Responsividade
-
-O portfólio foi desenvolvido com abordagem mobile-first, garantindo uma experiência otimizada em:
-
-- 📱 Smartphones (320px+)
-- 📟 Tablets (768px+)
-- 💻 Desktops (1024px+)
-- 🖥️ Telas grandes (1440px+)
-
-## 🚀 Como Executar
-
-1. Clone o repositório:
-```bash
-git clone https://github.com/jotape0712/portfolio.git
-```
-
-2. Abra o arquivo `index.html` no seu navegador
-
-ou
-
-2. Execute um servidor local:
-```bash
-# Com Python
-python -m http.server 8000
-
-# Com Node.js (http-server)
-npx http-server
-
-# Com Live Server (VS Code)
-# Use a extensão Live Server
-```
-
-## 📞 Contato
-
-- **LinkedIn**: [João Pedro Bezerra](https://www.linkedin.com/in/joao-pedro-bezerra-3a17a8303/)
-- **GitHub**: [jotape0712](https://github.com/jotape0712)
-- **WhatsApp**: Através do formulário de contato no portfólio
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
----
 
 ⭐ Se gostou do projeto, deixe uma estrela no repositório!
 
