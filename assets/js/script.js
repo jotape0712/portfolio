@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof Typed !== 'undefined') {
         const typed = new Typed('#typed-text', {
             strings: [
-                "Hi! I'm Joao Pedro, a computer science student passionate about modern web development. I'm currently focusing on JavaScript ecosystem, learning React for building interactive user interfaces and Node.js for server-side development. I'm also exploring TypeScript to write more robust and maintainable code. Through hands-on projects, I'm building my expertise in full-stack JavaScript development. My goal is to master these technologies and create amazing web applications while growing as a developer in the JavaScript community."
+                "Hi! I'm Joao Pedro, a computer science student passionate about modern web development. I'm currently focusing on JavaScript language, learning React for building interactive user interfaces and Node.js for back-end development. I'm also exploring TypeScript to write more robust and maintainable code. Through hands-on projects, I'm building my expertise in full-stack JavaScript development. My goal is to master these technologies and create amazing web applications while growing as a developer in the JavaScript community."
             ],
             typeSpeed: 30,
             backSpeed: 20,
