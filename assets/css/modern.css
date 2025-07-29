@@ -1,3 +1,32 @@
+/* Centralização absoluta do scroll-indicator */
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: max-content;
+  text-align: center;
+}
+.scroll-indicator-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+@media (max-width: 480px) {
+  .scroll-indicator {
+    position: static;
+    left: unset;
+    transform: unset;
+    width: 100%;
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+  }
+  .scroll-indicator-inner {
+    width: 100%;
+  }
+}
 /* Modern Portfolio CSS */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -1233,6 +1262,28 @@ section {
     
     .social-grid {
         justify-content: center;
+    }
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+    .contact-card {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+    }
+    .contact-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-xs);
+    }
+    .contact-details p, .contact-details h4 {
+        word-break: break-word;
+        font-size: 0.95rem;
+    }
+    .scroll-indicator {
+        position: static;
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
     }
 }
 
